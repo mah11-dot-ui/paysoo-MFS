@@ -1,20 +1,23 @@
-// console.log('login button clicked')
+// login button functionality
+document.getElementById("loginButton").addEventListener("click",function (e){
+    e.preventDefault()
+    const mobileNumber = 12345678910
+    const pin = 1234
+    
+    const mobileNumberValue = document.getElementById
+    ("mobile-number").value
+    const mobileNumberValueConverted = parseInt(mobileNumberValue)
 
-document.getElementById('login-button').addEventListener('click', function(event){
-    window.location.href = '/home.html'
-    event.preventDefault();  // <--- Vejaila To Begainears --->
-    console.log('login button clicked')
-    const PhoneNumber = document.getElementById('phone-number');
-    const pinNumber = document.getElementById('pin-number');    
-   
-    const floatNumber = document.getElementById('bank-float')
-     console.log(PhoneNumber, pinNumber, floatNumber)
 
-    if(PhoneNumber=== '5' && pinNumber=== '1234' && floatNumber=== '1'){
-        console.log('you are loged in')
+    const pinNumberValue = document.getElementById("pin-number").value
+
+    const pinNumberValueConverted = parseInt(pinNumberValue)
+
+    if(mobileNumberValueConverted === mobileNumber && pinNumberValueConverted===pin){
+        window.location.href="./home.html"
     }
+
     else{
-        alert('Wrong phone number and pin')
+        alert("Invalid Credentials!")
     }
-
 })

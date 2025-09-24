@@ -3,40 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payoo MFS</title>
+    <title>Document</title>
+    <!-- daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <header>
-        <main class="flex justify-center">
-            <div class="mockup-phone">
-                <div class="mockup-phone-camera"></div>
-  <div class="mockup-phone-display">
-   <div class="artboard artboard-demo phone-3">
-        <div class="hero bg-base-200 min-h-screen">
-  <div class="hero-content flex-col lg:flex-row-reverse">
-    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-      <div class="card-body">
-        <fieldset class="fieldset">
-          <label class="label">Phone Number:</label>
-          <input type="Name" id="phone-number" class="input" placeholder="Your Number" required />
-          <label class="label">4 Digit Pin</label>
-          <input type="password" id="pin-number" class="input" placeholder="Your 4 Digit Pin" required />
-          <div><a class="link link-hover">resend code</a></div>
-          <label class="label">Bank Float Number</label>
-          <input type="number" id="bank-float" class="input" placeholder="your Bank Float Number" required />
-          <button id="login-button" class="btn btn-primary mt-4">Login</button>
-        </fieldset>
-      </div>
-    </div>
-  </div>
-</div>
-   </div>
-  </div>
-</div>
-        </main>
-    </header>
-    <script src="js/login.js"></script>
-</body>
+    <body class="bg-[#f4f5f7] h-[100vh] flex flex-col justify-center items-center">
+        <div class="h-[130px] w-[300px] bg-[url(./assets/bg.png)] bg-cover flex justify-center items-center">
+            <img src="./assets/Group.png" alt="">
+        </div>
+        <form class=" w-[350px] bg-white rounded-2xl p-8">
+            <div>
+                <label class="font-semibold" for="">Mobile Number</label>
+                <br/>
+                <input type="text" placeholder="Enter Your Number" id="mobile-number" class="input bg-[#f4f5f7] mt-3 rounded-3xl" />
+            </div>
+            <div class="mt-5">
+                <label class="font-semibold" for="">4 Digit Pin</label>
+                <br/>
+                <input type="text" placeholder="Enter 4 Digit Pin" id="pin-number" class="input bg-[#f4f5f7] mt-3 rounded-3xl" />
+            </div>
+
+            <button class="btn text-white bg-[#0874F2]  mt-5 w-full rounded-3xl" id="loginButton">Login</button>
+        </form>
+
+
+        <!-- js scripts -->
+         <script src="js/login.js"></script>
+    </body>
 </html>
